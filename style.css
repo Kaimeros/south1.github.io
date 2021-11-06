@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Kanit' ;
+    font-family: 'Kanit';
     height: 100vh;
     background-color: white;
     display: flex;
@@ -28,15 +28,16 @@ form {
 .form-element {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .form-element span {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 input, textarea {
     FONT-WEIGHT: 100;
+    font-family: 'Kanit';
     font-size: 24px;
     border: 2px solid #f00;
     line-height: 2;
@@ -45,12 +46,19 @@ input, textarea {
 }
 form button {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     color: white;
-    background: #44b4e9;
+    background: #39bffd;
     border-radius: 10px;
-    border: none;
-    font-size: 24px;
+    border: 0px solid #000000;
+    font-family: 'Kanit';
+    font-size: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
+
+    transition-duration: 0.4s;
 }
 
+form button:hover {
+background-color: #00aeff;
+}
