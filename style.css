@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Kanit:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kanit' ;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-image: url(image/bgimage.jpg);
+}
+
+
+form {
+    background: #ffffffd9;
+    border-radius: 20px;
+    padding: 60px;
+    width: 600px;
+    max-width: calc(100%-60px);
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-element span {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    FONT-WEIGHT: 100;
+    font-size: 24px;
+    border: 2px solid #f00;
+    line-height: 2;
+    padding: 5px;
+    border-radius: 10px;
+}
+form button {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background: #44b4e9;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
