@@ -13,12 +13,17 @@ body {
 
     overflow: hidden;
 
-    background-image: url(image/bgimage.jpg);
+    background-image: url(image/Greek-Tranparent-1080p-tran.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }
 
 
 form {
-    background: #ffffffd9;
+    background: #ffffffc0;
+    backdrop-filter: blur(3px);
     border-radius: 20px;
     padding: 60px;
     width: 600px;
