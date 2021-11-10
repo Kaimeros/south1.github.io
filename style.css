@@ -13,20 +13,28 @@ body {
 
     overflow: hidden;
 
-    background-image: url(image/Greek-Tranparent-1080p-tran.png);
+    background-image: url(image/DSC_0010-1080p.jpg);
+    backdrop-filter: blur(4px);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
 }
 
 
 form {
-    background: #ffffffc0;
-    backdrop-filter: blur(3px);
+    background: #ffffffcc;
+    backdrop-filter: blur(6px);
     border-radius: 20px;
     padding: 60px;
-    width: 600px;
+    width: 700px;
     max-width: calc(100%-60px);
 }
 
@@ -40,19 +48,31 @@ form {
     margin-bottom: 20px;
 }
 
+@keyframes blink {
+    50% { border-color: #ffffff; }
+}
 input, textarea {
     FONT-WEIGHT: 100;
     font-family: 'Kanit';
     font-size: 24px;
-    border: 2px solid #f00;
+    border: 2px solid rgb(0, 162, 255);
     line-height: 2;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
+    background-image: url(image/outline_login_black_48dp.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 48px;
+
+    animation: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
 }
 form button {
     width: 100%;
     padding: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     background: #39bffd;
     border-radius: 10px;
     border: 0px solid #000000;

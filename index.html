@@ -12,12 +12,15 @@
         onload="if(submitted) {window.location='redirect.html';}"></iframe>
               <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf4mOKeAK1cxZrCQs8l-ikv4apZBdp-ndE-o6R5TMSSno9FHQ/formResponse" method="post" target="hidden_iframe" 
         onsubmit="submitted=true;">
-                    
+     
             <h1 style="text-align: center;">รายการประชุมเพื่อนใหม่</h1>
-            <h1 style="text-align: center;">ฝ่ายผู้ใหญ่ชายมุ่งสู่ ที่ระลึก 11.18</h1>
-            <h1 style="text-align: center;">รวมภาคใต้ 1</h1>
+            <h1 style="text-align: center;">ฝ่ายผู้ใหญ่ชายที่ระลึก 11.18 รวมภาคใต้ 1</h1>
+
+            <hr size="5" color="black">
+    
             <div class="form-element">
-               <span style="text-align: center; font-size: 20px;">กรุณาใส่จำนวนผู้รับชมเป็นตัวเลขที่ช่องด้านล่าง</span>
+               <span style="text-align: center; font-size: 24px;"><b>กรุณาใส่จำนวนผู้ร่วมรับชมเฉพาะผู้ใหญ่ชายในช่องด้านล่าง</b></span>
+               <span style="text-align: center; font-size: 24px;"><b>แล้วกดปุ่มยืนยัน</b></span>
                <input type="number" min="1" name="entry.1368769291" required placeholder="กรุณาใส่จำนวนเป็นตัวเลข" style="text-align: center; font-size: 20px;"
                oninvalid="this.setCustomValidity('กรุณาใส่จำนวนเป็นตัวเลข')"
                oninput="setCustomValidity('')"></input>
@@ -25,10 +28,12 @@
             </div>
             <button id="smbtn" type="submit">ยืนยัน</button>
 
-            <p style="text-align: center; font-size: 20px;">หลังจากกดยืนยัน จะเข้าสู่หน้ารับชมวิดีโอ</p>
+            <p style="text-align: center; font-size: 24px;"><b>หลังจากกดยืนยัน จะเข้าสู่หน้ารับชมรายการ</b></p>
+
+            <hr size="5" color="black">
 
             <h2 style="text-align: center;">นับเวลาถอยหลังก่อนเริ่มรายการ</h2>
-            <p id="countdown" style="text-align: center; font-size: 20px;"></p>
+            <p id="countdown" style="text-align: center; font-size: 24px;"></p>
             <script>
                 // Set the date we're counting down to
                 var countDownDate = new Date("Nov 21, 2021 13:00:00").getTime();
