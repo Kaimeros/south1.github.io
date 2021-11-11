@@ -33,9 +33,9 @@ form {
     background: #ffffffcc;
     backdrop-filter: blur(6px);
     border-radius: 20px;
-    padding: 60px;
-    width: 700px;
-    max-width: calc(100%-60px);
+    padding: 30px;
+    width: 800px;
+    max-width: calc(100%-30px);
 }
 
 .form-element {
