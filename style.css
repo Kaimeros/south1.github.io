@@ -30,11 +30,11 @@ body {
 
 
 form {
-    background: #ffffffcc;
+    background: #ffffffee;
     backdrop-filter: blur(6px);
     border-radius: 20px;
     padding: 30px;
-    width: 800px;
+    width: 1000px;
     max-width: calc(100%-30px);
 }
 
@@ -55,7 +55,7 @@ input, textarea {
     FONT-WEIGHT: 100;
     font-family: 'Kanit';
     font-size: 24px;
-    border: 2px solid rgb(0, 162, 255);
+    border: 4px solid rgb(0, 162, 255);
     line-height: 2;
     padding: 10px;
     border-radius: 10px;
