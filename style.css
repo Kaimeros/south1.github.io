@@ -7,7 +7,7 @@ body {
     font-family: 'Kanit';
     height: 100vh;
     background-color: white;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 
@@ -28,6 +28,14 @@ body {
     width: 20%;
 }
 
+.text_title{
+    background: #ffffffee;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    padding: 5px;
+    width: 1000px;
+    max-width: calc(100%-30px);
+}
 
 form {
     background: #ffffffee;
@@ -49,7 +57,7 @@ form {
 }
 
 @keyframes blink {
-    50% { border-color: #ffffff; }
+    50% { border-color: #b7e4ff; }
 }
 input, textarea {
     FONT-WEIGHT: 100;
