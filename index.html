@@ -68,8 +68,37 @@
 
         </form>
 
+        <!-- popup -->
+        <div id="mypopup" class="popup">
 
+            <!-- popup content -->
+            <div class="popup_content">
+                <span class="close">&times;</span>
+                <h2 style="text-align: center;">รายการประชุมเพื่อนใหม่ ฝ่ายผู้ใหญ่ชายที่ระลึก 11.18 รวมภาคใต้ 1</h2>
+                <h2 style="text-align: center;">เริ่มเปิดให้ลงทะเบียนเวลา 12.00 น. ของวันที่ 21 พ.ย. 2564</h2>
+                <h2 style="text-align: center;">เริ่มถ่ายทอดสดรายการเวลา 13.00 น. ของวันที่ 21 พ.ย. 2564</h2>
+            </div>
+        </div>
 
+        <script>
+            // Get the popup
+            var popup = document.getElementById("mypopup");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+                        // When the user clicks on <span> (x), close the modal
+            popup.onclick = function() {
+                popup.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == popup) {
+                popup.style.display = "none";
+                }
+            }
+        </script>
         
     </body>
 </html>
