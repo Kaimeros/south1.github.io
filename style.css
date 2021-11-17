@@ -29,16 +29,20 @@ body {
 
 .text_title{
     background: white;
-    background-image: url(image/sgi-flag-1.jpg);
+    background-image: url(image/sgi-flag-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(6px);
- 
-    color: black;
     border-radius: 20px;
     padding: 0px;
     width: 1000px;
     max-width: calc(100%-30px);
+
+    color: black;
+    -webkit-text-stroke: 1px black;
+
+
+
 }
 
 form {
