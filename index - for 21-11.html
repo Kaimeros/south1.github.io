@@ -32,8 +32,11 @@
 
             <p style="text-align: center; font-size: 30px;"><b>หลังจากกดยืนยัน จะเข้าสู่หน้ารับชมรายการ</b></p>
 
+            <p style="text-align: center; font-size: 28px;">หมายเหตุ : สำหรับผู้ลงทะเบียนแล้ว กรุณาใส่ “0” (ศูนย์) และกดยืนยัน เพื่อเข้ารายการ</p>
 
+            <!--
             <h2 style="text-align: center; font-size: 30px;">นับเวลาถอยหลังก่อนเริ่มรายการ</h2>
+            -->
             <p id="countdown" style="text-align: center; font-size: 30px;"></p>
             <script>
                 // Set the date we're counting down to
@@ -55,7 +58,7 @@
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
                 // Display the result in the element with id="countdown"
-                document.getElementById("countdown").innerHTML = days + " วัน " + hours + " ชั่วโมง "+ minutes + " นาที " + seconds + " วินาที ";
+                document.getElementById("countdown").innerHTML = "นับเวลาถอยหลังก่อนเริ่มรายการ " + days + " วัน " + hours + " ชั่วโมง "+ minutes + " นาที " + seconds + " วินาที ";
                 
                 // If the count down is finished, write some text
                 if (distance < 0) {
