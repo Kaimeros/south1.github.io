@@ -2,6 +2,7 @@
     <head>
     
         <title>รายการประชุมเพื่อนใหม่ ฝ่ายผู้ใหญ่ชายที่ระลึก 11.18 รวมภาคใต้ 1</title>
+        <meta http-equiv="refresh" content="600">  
         <link rel="stylesheet" href="style.css" />
         
     </head>
@@ -19,27 +20,27 @@
         onsubmit="submitted=true;">
    
             <div class="form-element">
-                <span style="text-align: center; font-size: 36px;"><b>เริ่มเปิดให้ลงทะเบียนเวลา 12.00 น. วันอาทิตย์ที่ 21 พ.ย. 2564</b></span>
-        
-            <!--       <span style="text-align: center; font-size: 34px;"><b>ใส่จำนวนผู้รับชมเฉพาะผู้ใหญ่ชายในช่องด้านล่าง แล้วกดปุ่มยืนยัน</b></span>
+                <span style="text-align: center; font-size: 36px;"><b>กรุณาลงทะเบียน ก่อนรับชมรายการ</b></span>
+               <span style="text-align: center; font-size: 34px;"><b>ใส่จำนวนผู้รับชมเฉพาะผู้ใหญ่ชายในช่องด้านล่าง แล้วกดปุ่มยืนยัน</b></span>
                <span style="text-align: center; font-size: 34px;"><b></b></span>
-               <input type="number" min="1" name="entry.1368769291" required placeholder="กรุณาใส่จำนวนเป็นตัวเลข" style="text-align: center; font-size: 30px;"
+               <input type="number" min="0" name="entry.1368769291" required placeholder="กรุณาใส่จำนวนเป็นตัวเลข" style="text-align: center; font-size: 30px;"
                oninvalid="this.setCustomValidity('กรุณาใส่จำนวนเป็นตัวเลข')"
                oninput="setCustomValidity('')"></input>
-            -->           
+                          
             </div>
-
-            <!--
             <button id="smbtn" type="submit" style="font-size: 34px;">ยืนยัน</button>
 
             <p style="text-align: center; font-size: 30px;"><b>หลังจากกดยืนยัน จะเข้าสู่หน้ารับชมรายการ</b></p>
+
+            <p style="text-align: center; font-size: 28px;">หมายเหตุ : สำหรับผู้ลงทะเบียนแล้ว กรุณาใส่ “0” (ศูนย์) และกดยืนยัน เพื่อเข้ารายการ</p>
+
+            <!--
+            <h2 style="text-align: center; font-size: 30px;">นับเวลาถอยหลังก่อนเริ่มรายการ</h2>
             -->
-        
-            <h2 style="text-align: center; font-size: 38px;">นับเวลาถอยหลังก่อนเริ่มเปิดให้ลงทะเบียน</h2>
-            <p id="countdown" style="text-align: center; font-size: 38px;"></p>
+            <p id="countdown" style="text-align: center; font-size: 30px;"></p>
             <script>
                 // Set the date we're counting down to
-                var countDownDate = new Date("Nov 21, 2021 12:00:00").getTime();
+                var countDownDate = new Date("Nov 21, 2021 13:00:00").getTime();
     
                 // Update the count down every 1 second
                 var x = setInterval(function() {
@@ -57,7 +58,7 @@
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
                 // Display the result in the element with id="countdown"
-                document.getElementById("countdown").innerHTML = days + " วัน " + hours + " ชั่วโมง "+ minutes + " นาที " + seconds + " วินาที ";
+                document.getElementById("countdown").innerHTML = "นับเวลาถอยหลังก่อนเริ่มรายการ " + days + " วัน " + hours + " ชั่วโมง "+ minutes + " นาที " + seconds + " วินาที ";
                 
                 // If the count down is finished, write some text
                 if (distance < 0) {
@@ -66,8 +67,10 @@
                 }
                 }, 1000);
 
+                
+            
             </script>
-            <img src="image/Greek-Tranparent-400p-tran.png" class="center" style="width: 100px;">
+
         </form>
 
         <!-- popup -->
