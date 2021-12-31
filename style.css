@@ -5,11 +5,9 @@
 }
 
 body {
-    font-family: 'Kanit';
-    /* height: 100vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center; */
+  font-family: 'Kanit';
+  margin: 0px;
+  padding: 0px;
 }
 
 form {
